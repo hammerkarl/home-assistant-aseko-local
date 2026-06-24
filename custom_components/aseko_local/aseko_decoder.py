@@ -421,7 +421,7 @@ class AsekoDecoder:
             configuration=probes,
             timestamp=ts,
             water_temperature=int.from_bytes(data[25:27], "big") / 10,
-            air_temperature=int.from_bytes(data[23:24], "big", signed=True) / 10,
+            air_temperature=int.from_bytes(data[23:25], "big", signed=True) / 10,
             water_flow_to_probes=(data[28] == WATER_FLOW_TO_PROBES),
             required_water_temperature=AsekoDecoder._normalize_value(data[55], int),
             start1=AsekoDecoder._time(data[56:58]) if has_filtration else None,
