@@ -51,7 +51,7 @@ _BYTE_LABELS: dict[int, str] = {
     21: "electrolyzer_power (SALT) / cl_free_mv[lo] (NET)",
     22: "unknown",
     23: "air_temperature[hi]",
-    24: "air_temperature[lo]  (÷10 = °C) ",
+    24: "air_temperature[lo]  (÷10 = °C)",
     25: "water_temperature[hi]",
     26: "water_temperature[lo]  (÷10 = °C)",
     27: "unknown",
