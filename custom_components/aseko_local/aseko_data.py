@@ -209,7 +209,7 @@ class AsekoDevice:
     pool_volume: int | None = None  # byte 92 & 93
     max_filling_time: int | None = None  # byte 94
 
-    air_temperature: float | None = None
+    air_temperature: float | None = None # byte 23 & 24
     delay_after_dose: int | None = None  # byte 107 & 108 ? (seconds)
     delay_after_startup: int | None = None  # byte 74 & 75 (seconds)
 
